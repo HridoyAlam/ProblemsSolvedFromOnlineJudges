@@ -4,27 +4,29 @@ int main(){
     int n,k,l,c,d,p,nl,np;
     cin>>n>>k>>l>>c>>d>>p>>nl>>np;
 
-    int td = (k * l) / nl;
+    int kl = (k * l);
     int cd = c * d;
-    int salt = p / np;
+    //int salt = p / np;
 
-    int min_value ;
+    int cnt = 0;
 
-    //int value = min(td,cd,salt) / n;
+    while(true){
 
+        kl = kl-nl;
+        cd = cd-1;
+        p = p-np;
 
-
-        if(( td > cd && cd >salt) || (cd > td && salt< cd)){
-            min_value = salt;
+        if(kl< 0 || cd< -0|| p<0){
+            break;
         }
-        else if( (td>salt && salt>cd) || ( salt>td && td > cd) ){
-            min_value = cd;
-        }
-
         else{
-            min_value = td;
+            cnt++;
         }
+    }
 
-    cout<<floor(min_value/n)<<endl;
+
+
+
+    cout<<floor(cnt/n)<<endl;
 return 0;
 }
