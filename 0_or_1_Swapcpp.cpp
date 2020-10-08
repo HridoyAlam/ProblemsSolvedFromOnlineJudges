@@ -1,14 +1,46 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-int a,b;
-cin>>a>>b;
+int n;
+cin>>n;
+int arr[n];
 
-int k =0;
+for(int i=0;i<n;i++){
+    cin>>arr[i];
+}
+int cnt= 0;
+int temp[n];
 
-k = ((a * a) - (b * b)) / ((2*a)-(2*b));
+for(int i=0;i<n;i++){
+    temp[i] = arr[i];
+}
+sort(temp, temp+n);
 
-cout<<abs(k)<<endl;
+/*
+for(int i=0;i<n;i++){
+    cout<<arr[i]<<" ";
+}
+cout<<endl;
 
+for(int i=0;i<n;i++){
+    cout<<temp[i]<<" ";
+}
+cout<<endl;
+*/
+for(int i=0;i<n;i++){
+        if (arr[i] != temp[i]){
+            cnt++;
+        }
+    }
+
+if(cnt == 2 || cnt ==0){
+    cout<<"YES"<<endl;
+}
+else{
+    cout<<"NO"<<endl;
+}
 return 0;
 }
+/*
+
+*/
