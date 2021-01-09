@@ -52,8 +52,8 @@ int main(){
     }
     cout<<endl;
     cout<<n<<endl;
-
-    QuickSort_randomized(arr,0, n-1);
+    //quicSort(arr,0, n-1);
+    //QuickSort_randomized(arr,0, n-1);
     printArray(arr,n);
 return 0;
 }
