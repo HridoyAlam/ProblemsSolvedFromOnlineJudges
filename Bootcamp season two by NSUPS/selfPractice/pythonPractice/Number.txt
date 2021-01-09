@@ -1,0 +1,71 @@
+>>> # assign the integer 2 to a var int_var
+>>>  int_var = 2
+
+>>> # assign the integer 3 to a var int_var1
+>>>  int_var1 = 3
+
+>>> # print the sum of the two variables int_var and int_var1
+>>>  print(int_var + int_var1)
+5
+
+>>> # assign a decimal number to a variable float_var
+>>>  float_var = 5.6
+
+>>> # assign another decimal number to a variable float_var1
+>>>  float_var1 = 6.7
+
+>>> # print the sum of the two decimal numbers
+>>>  print(float_var + float_var1)
+12.3
+
+>>> # assign a complex number to a variable complex_var
+>>>  complex_var = (1 + 2j)
+
+>>> # assign another complex number to a variable complex_var1
+>>>  complex_var1 = (2 + 3j)
+
+>>> # print the sum of the two complex numbers
+>>>  print(complex_var + complex_var1)
+(3+5j)
+
+>>> # divide two integers and assign it to a variable result
+>>> result = 3 / 2
+
+>>> # print the result
+>>> print(result)
+
+>>> # check if the result belongs to the class float
+>>> print(isinstance(result, float))
+
+>>> # add two numbers, one is int and the other is float
+>>> result = 2 + 5.1
+
+>>> # print the result, note that the result is a float
+>>> print(result)
+7.1
+
+>>> # check that the result is an instance of float
+>>> print(isinstance(result, float))
+True
+>>> # add two numbers belonging to complex and int class
+>>> result = (2 + 3j) + 4
+
+>>> # print the result
+>>> print(result)
+(6+3j)
+
+>>> # check if the result is of class complex
+>>> print(isinstance(result, complex))
+True
+
+>>> # add two numbers belonging to complex and float class
+>>> result = (2 + 3j) + 4.12
+
+>>> # print the result
+>>> print(result)
+(6.12+3j)
+
+>>> # check if the result is of class complex
+>>> print(isinstance(result, complex))
+True
+

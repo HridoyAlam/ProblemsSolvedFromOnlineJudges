@@ -1,0 +1,70 @@
+for item in iterable: # you can place any list or tuple or string in place of iterable
+    # write your code here.
+    pass
+
+>>> fruits = ["apples", "oranges", "mangoes"]
+>>> for fruit in fruits:
+...     print(fruit)
+...
+
+>>> fruits = ["apples", "oranges", "mangoes"]
+>>> for fruit in fruits:
+...     string_size = 0
+...     for alphabet in fruit:
+...         string_size += 1
+...     print("name of fruit: %s is has length %s" % (fruit, string_size))
+...
+
+
+>>> fruits = ["apples", "oranges", "mangoes"]
+>>> for index, fruit in enumerate(fruits):
+...     print("index is %s" % index)
+...     print("fruit is %s" % fruit)
+...     print("###########################")
+...
+>>> fruits = ["apples", "oranges", "mangoes"] # get the list
+>>> length = len(fruits) # get the length that will be needed for the while condition
+>>> i = 0 # initialise a counter
+>>> while i < length: # give the condition
+...         print(fruits[i]) # the code block
+...         i += 1 # increment the counter
+...
+
+>>> for i in range(1,3):
+...         for j in range(1,3):
+...                 print('%d x %d = %d' % (i, j, i*j))
+...
+>>> num = 42
+>>> if num == 42: # condition
+...     print("number is 42") # direction 1
+...
+number is 42
+
+>>> num = 43
+>>> if num == 42:
+...         print("number is 42")
+...      else:
+...         print("number if not 42")
+...
+
+>>> num = 44
+>>> if num == 42:
+...         print("number is 42")
+...      elif num == 44:
+...         print("num is 44")
+...      else:
+...         print("num is neither 42 nor 44")
+...
+
+>>> num = 42
+>>> if num > 20:
+...         if num < 50:
+...                 print("num between 20 and 50")
+...
+
+
+
+
+
+
+

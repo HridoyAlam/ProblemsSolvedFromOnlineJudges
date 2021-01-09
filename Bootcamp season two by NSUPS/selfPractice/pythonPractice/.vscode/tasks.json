@@ -1,0 +1,7 @@
+{
+    "version": "0.1.0",
+    "isShellcommand": true,
+    "command": "C:\\Users\\Hridoy\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe",
+    "showOutput": "always",
+    "args": ["${file}"]
+}

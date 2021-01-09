@@ -1,0 +1,64 @@
+>>> single_quote_character = 'a'
+>>> print(single_quote_character)
+a
+>>> print(type(single_quote_character)) # check the type of the variable.
+<class 'str'>
+
+>>> double_quote_character = "b"
+>>> print(double_quote_character)
+b
+>>> print(type(double_quote_character))
+<class 'str'>
+
+>>> double_quote_multiple_characters = "aeiou"
+>>> single_quote_multiple_characters = 'aeiou'
+>>> print(type(double_quote_multiple_characters), type(single_quote_multiple_characters))
+<class 'str'> <class 'str'>
+
+>>> print(double_quote_multiple_characters is double_quote_multiple_characters)
+True
+
+# find the index of a "c" in a string "abcde"
+>>>  "abcde".index("c")
+2
+
+>>> # for example, test if string "i" is present in string "pythonic" at least once. "i" is present in the string. Therefore, the result should be true.
+>>>  "i" in "pythonic"
+True
+>>> # as "x" is not present in the string "pythonic" the below test should return false
+>>> "x" in "pythonic" # "x" is not present in "pythonic"
+False
+
+>>> # join a list of strings 1, 2, 3 with a space as a delimiter and 1,2,3 as the list of strings. So, the result will be the strings with spaces between them.
+>>>  combined_string = " ".join(["1", "2", "3"])
+'1 2 3'
+
+  >>> # split the string "1 2 3" and return a list of the numbers.
+    >>>  "1 2 3".split() # splitting
+    ['1', '2', '3']
+
+>>> “1:2:3”.split(“:”)
+     [‘1’, ‘2’, ‘3’]
+
+>>>  lang = "python"
+>>>  print(lang[0])
+>>>  print(lang[2]) # access the 3rd letter
+'t'
+>>>  print(lang[-3]) # access the third letter from the end.
+'h'
+
+ >>>  print("I love %s in %s" % ("programming", "Python")) # templating strings
+    'I love programming in Python'
+>>> print("I love {programming} in {python}".format(programming="programming", python="Python"))
+'I love programming in Python'
+
+# Test truth value of empty string
+>>>  print(bool(""))
+False
+
+# Test truth value of non-empty string "x"
+>>>  print(bool("x"))
+True
+
+
+
